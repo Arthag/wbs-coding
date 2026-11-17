@@ -88,3 +88,19 @@ header{
     text-align: center;
 }
 
+main section li{
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
+}
+
+main section h3{
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    padding-top: 15px;
+}
+
+main section ul{
+    padding-top:5px;
+}
+
