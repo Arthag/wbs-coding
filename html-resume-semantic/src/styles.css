@@ -31,7 +31,7 @@ ul{
 }
 
 nav a{
-    border: 2px solid #004400;
+    border: 1px solid #004400;
     background-color: #00CC00;
     border-radius: 4px;
     padding: 3px;
@@ -61,8 +61,8 @@ p {
 }
 
 section{
-    background-color: #eeeeee;
-    border: 3px solid #aaaaaa;
+    background-color: #fdfdfd;
+    border: 1px solid #aaaaaa;
     border-radius: 6px;
     padding: 15px;
     margin-top: 5px;
@@ -70,7 +70,6 @@ section{
 
 header{
     text-align: center;
-    padding: 15px;
     margin-top: 5px;
 }
 
@@ -103,4 +102,38 @@ main section h3{
 main section ul{
     padding-top:5px;
 }
+
+.skills{
+    display: grid;
+    padding: 0;    
+    width: 100%;
+    height: 100%;
+    border: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8em;
+}
+
+.skills ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills li{
+    border: 1px solid #aaaaaa;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 0.4em;      
+}
+
+.skills .good{
+    background-color: #00CC00;
+}
+.skills .very_good{
+    background-color: #8c8cf5;
+}
+.skills .basic{
+    background-color: #00FFFF;
+}
+
+
 
