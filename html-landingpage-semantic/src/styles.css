@@ -1,11 +1,11 @@
 * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-html{
-    font-family: Arial, Helvetica, sans-serif;    
+html {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -15,44 +15,59 @@ body {
     color: #004400
 }
 
+@media(max-width: 600px) {
+    .gallery img {
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 400px) {
+    .gallery img {
+        max-width: 250px;
+    }
+}
+
+
 nav {
     padding: 15px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
-    gap: 1em;   
+    gap: 1em;
 }
 
-ul{
+ul {
     list-style: none;
     padding-top: 3px;
 }
 
-nav a{
+nav a {
     border: 2px solid #004400;
     background-color: #00CC00;
     border-radius: 4px;
     padding: 3px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #00CC00;
     background: linear-gradient(to right, #004400, #990000);
 }
 
-a{
+a {
     text-decoration: none;
-    color: #004400;    
+    color: #004400;
 }
 
-a:hover{
+a:hover {
     color: #00CC00;
-    
+
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin-top: 5px;
 }
 
@@ -60,7 +75,7 @@ p {
     margin-top: 5px;
 }
 
-section{
+section {
     background-color: #eeeeee;
     border: 3px solid #aaaaaa;
     border-radius: 6px;
@@ -68,23 +83,47 @@ section{
     margin-top: 5px;
 }
 
-header{
+header {
     text-align: center;
     padding: 15px;
     margin-top: 5px;
 }
 
 
-.gallery{
+.gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
 }
 
-.gallery h1, 
-.gallery h2, 
-.gallery h3{
+.gallery h1,
+.gallery h2,
+.gallery h3 {
     flex-basis: 100%;
     text-align: center;
 }
 
+.gallery img {
+    max-width: 600px;
+    height: auto;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact button {
+    padding: 1rem;
+}
+
+.contact form p:last-child {
+    text-align: right;
+}
