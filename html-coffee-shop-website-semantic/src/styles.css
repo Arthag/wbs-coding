@@ -16,29 +16,30 @@ body {
 }
 
 nav {
-    padding: 15px;
+    padding: 1.5em;
 }
 
 nav ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    gap: 1em;   
+    gap: 1rem;   
 }
 
 ul{
     list-style: none;
-    padding-top: 3px;
+    padding-top: 0.3em;
 }
 
 nav a{
-    border: 2px solid #004400;
-    background-color: #00CC00;
+    border: 1px solid #004400;
+    background-color: #22EE22;
     border-radius: 4px;
-    padding: 3px;
+    padding: 0.3em;
 }
 
 nav a:hover{
-    background-color: #00CC00;
+    background-color: #22EE22;
     background: linear-gradient(to right, #004400, #990000);
 }
 
@@ -48,21 +49,17 @@ a{
 }
 
 a:hover{
-    color: #00CC00;
-    
+    color: #22EE22;   
 }
 
-h1, h2, h3 {
-    margin-top: 5px;
+h1, h2, h3, p {
+    margin-top: 0.7em;
 }
 
-p {
-    margin-top: 5px;
-}
 
 section{
     background-color: #eeeeee;
-    border: 3px solid #aaaaaa;
+    border: 1.5px solid #aaaaaa;
     border-radius: 6px;
     padding: 15px;
     margin-top: 5px;
@@ -70,21 +67,31 @@ section{
 
 header{
     text-align: center;
-    padding: 15px;
-    margin-top: 5px;
+    padding: 1em;
+    margin-top: 0.3em;
 }
 
-
-.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-}
-
-.gallery h1, 
-.gallery h2, 
-.gallery h3{
-    flex-basis: 100%;
+figure{
     text-align: center;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact button {
+    padding: 1rem;
+}
+
+.contact form p:last-child {
+    text-align: right;
 }
 
