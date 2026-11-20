@@ -15,17 +15,6 @@ body {
     color: #004400
 }
 
-@media(max-width: 600px) {
-    .gallery img {
-        max-width: 400px;
-    }
-}
-
-@media(max-width: 400px) {
-    .gallery img {
-        max-width: 250px;
-    }
-}
 
 
 nav {
@@ -126,4 +115,17 @@ header {
 
 .contact form p:last-child {
     text-align: right;
+}
+
+
+@media(max-width: 600px) {
+    .gallery img {
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 400px) {
+    .gallery img {
+        max-width: 250px;
+    }
 }
