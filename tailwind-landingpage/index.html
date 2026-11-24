@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Just another Dog Adopt Agency">
+    <title>Just another Dog Adopt Agency</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-2 box-border bg-[radial-gradient(var(--color-teal-200),var(--color-white))] pl-1 font-[Arial,Helvetica,sans-serif] text-green-900">
+    <header class="grid grid-cols-1 justify-center mt-1 p-3 text-center">
+        <figure>
+            <img src="./src/images/dogs.png" class="mx-auto block" width="300" alt="Fluffy dogs">
+            <figcaption>Fluffy friends</figcaption>
+        </figure>
+        <h1 class="mt-1">Find your fluffy friend</h1>
+        <p class="mt-1">Here you can match with your perfect fluffy dog, except you're a cat.</p>
+    </header>
+
+    <main>
+        <section class="mt-1 rounded-[6px] border bg-gray-200 p-3">
+            <h2 class="mt-1 font-bold">About us</h2>
+            <p class="mt-1">
+                There're so many dogs without a family, which can provide so much for your life.
+                Our mission is to find the perfect human-dog match to enrich both lifes.
+            </p>
+        </section>
+
+        <section class="mt-1 rounded-[6px] border bg-gray-200 p-3">
+            <h2 class="mt-1 font-bold">Why Adopt from Us</h2>
+            <ul class="list-none pt-1">
+                <li>Comprehensive Veterinary Checks</li>
+                <li>Behavioral Training for All Dogs</li>
+                <li>Behaviour assessment</li>
+                <li>You get assist from dog trainer for the first 6 months</li>
+                <li>We just provide dogs who fit 100% to your livestyle</li>
+                <li>No accidents since <s>2001</s> Fred left</li>
+            </ul>
+        </section>
+
+        <section class="mt-1 flex flex-wrap gap-4 rounded-[6px] border bg-gray-200 p-3">
+            <h2 class="mt-1 w-full text-center font-bold">Meet our Dogs</h2>
+
+            <figure>
+                <img class="h-auto w-full max-w-2xl sm:max-w-md"
+                     src="https://placedog.net/500/280?random" alt="Fluffy dog">
+                <figcaption>Fluffy friends</figcaption>
+            </figure>
+            <figure>
+                <img class="h-auto w-full max-w-2xl sm:max-w-md"
+                     src="https://placedog.net/400/280?random" alt="Fluffy dog2">
+                <figcaption>Fluffy</figcaption>
+            </figure>
+            <figure>
+                <img class="h-auto w-full max-w-2xl sm:max-w-md"
+                     src="https://placedog.net/450/300?random" alt="Fluffy dog3">
+                <figcaption>John</figcaption>
+            </figure>
+            <figure>
+                <img class="h-auto w-full max-w-2xl sm:max-w-md"
+                     src="https://placedog.net/500/250?random" alt="Fluffy dog4">
+                <figcaption>Ronny</figcaption>
+            </figure>
+            <figure>
+                <img class="h-auto w-full max-w-2xl sm:max-w-md"
+                     src="https://placedog.net/490/280?random" alt="Fluffy dog5">
+                <figcaption>Bella</figcaption>
+            </figure>
+            <figure>
+                <img class="h-auto w-full max-w-2xl sm:max-w-md"
+                     src="https://placedog.net/460/280?random" alt="Fluffy dog6">
+                <figcaption>Zoe</figcaption>
+            </figure>
+            <figure>
+                <img class="h-auto w-full max-w-2xl sm:max-w-md"
+                     src="https://placedog.net/480/280?random" alt="Fluffy dog7">
+                <figcaption>Dumbledor</figcaption>
+            </figure>
+        </section>
+
+        <section class="contact mt-1 rounded-[6px] border bg-gray-200 p-3">
+            <h2 class="mt-1 font-bold">Get in Touch</h2>
+            <form action="#" method="post" class="grid grid-cols-1 gap-4">
+                <p class="mt-1">
+                    <label for="username">Your name</label>
+                    <input class="box-border w-full rounded border border-gray-400 bg-white p-2" type="text" id="username" name="username" required>
+                </p>
+                <p class="mt-1">
+                    <label for="email">Your email</label>
+                    <input class="box-border w-full rounded border border-gray-400 bg-white p-2" type="email" id="email" name="email" required>
+                </p>
+                <p class="mt-1">
+                    <label for="message">Message</label>
+                    <textarea class="box-border w-full rounded border border-gray-400 bg-white p-2" id="message" name="message" rows="5" required></textarea>
+                </p>
+                <p class="mt-1 text-right">
+                    <button class="rounded border border-green-900 bg-green-600 px-4 py-2 text-white hover:bg-green-800" type="submit">Send</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="mt-1">&copy;2026 Daniel Rohrlack</p>
+    </footer>
+</body>
+</html>
