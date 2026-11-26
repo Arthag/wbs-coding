@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-2 box-border bg-[radial-gradient(var(--color-teal-200),var(--color-white))] pl-1 font-[Arial,Helvetica,sans-serif] text-green-900">
+    <header class="grid grid-cols-1 justify-center mt-1 p-3 text-center">
+        <figure>
+            <img src="./pic300.png" class="mx-auto block" width="300" alt="Hacker">
+            <figcaption></figcaption>
+        </figure>
+        <h1 class="mt-1 font-bold">Bundle</h1>
+        <p class="mt-1">
+            You're on the entrance page of my Repository where I've bundled some coding projects. Please follow the
+            links to see the content of a specific project
+        </p>
+    </header>
+    <main class="mx-auto p-3 justify-center text-center">
+        <ul id="project"></ul>
+    </main>
+
+    <script>
+  const projects = [
+    {path: 'html-resume-semantic',text: 'HTML: Resume(semantic)'},
+    {path: 'tailwind-resume-psd',text: 'Tailwind: Resume(PSD)'},
+    {path: 'html-landingpage-semantic',text: 'HTML: Landingpage(semantic)'},
+    {path: 'tailwind-landingpage',text: 'Tailwind: Landingpage'},
+    {path: 'html-coffee-shop-website-semantic',text: 'HTML: Coffeeshop(semantic)'},
+    {path: 'css-time-travel-agency',text: 'CSS: Time Travel Agency'},
+    {path: 'css-windows-nostalgia',text: 'CSS: Windows Nostalgia'}
+  ];
+  const liste = document.querySelector("#project");
+
+    for (const seite of projects) {
+      const li = document.createElement("li");
+      const link = document.createElement("a");
+
+      link.href = seite.path;
+      link.textContent = seite.text;
+      link.target = '_blank';
+      link.className =
+        "block rounded-xl bg-white p-5 font-medium shadow-sm transition hover:-translate-y-0.5 hover:shadow-md";
+      li.append(link);
+      liste.append(li);
+    }
+</script>
+    
+</body>
+</html>
