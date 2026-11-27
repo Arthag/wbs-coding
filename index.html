@@ -23,6 +23,14 @@
     </main>
 
     <script>
+  /*
+   * Builds the project link list dynamically:
+   * - `projects` holds one entry per sub-project: `path` is the folder the link points to,
+   *   `text` is the label shown on the page.
+   * - The loop creates an <li> with an <a> for every entry, styles it with Tailwind classes,
+   *   opens it in a new tab, and appends it to the <ul id="project"> in <main>.
+   * To add a new project, just add another { path, text } object to the array.
+   */
   const projects = [
     {path: 'html-resume-semantic',text: 'HTML: Resume(semantic)'},
     {path: 'tailwind-resume-psd',text: 'Tailwind: Resume(PSD)'},
